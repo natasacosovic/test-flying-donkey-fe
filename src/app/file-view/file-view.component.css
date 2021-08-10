@@ -1,0 +1,10 @@
+td, th {
+    border: 1px solid #ddd;
+
+  }
+  
+th {
+    text-align: center;
+    background-color: rgb(43, 168, 226);
+    color: white;
+  }

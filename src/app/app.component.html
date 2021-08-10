@@ -1,0 +1,9 @@
+<h1>Flying Donkey Test Task</h1>
+<h1><button type="button" (click)="uploadMode = false;">View</button>
+<button type="button" (click)="uploadMode = true;">Upload</button>  </h1>
+<div *ngIf="uploadMode; else viewMode">
+    <app-file-upload></app-file-upload>
+</div>
+<ng-template #viewMode>
+    <app-file-view></app-file-view>
+</ng-template>

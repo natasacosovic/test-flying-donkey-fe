@@ -1,0 +1,17 @@
+<h2>View files</h2>
+<table *ngFor = "let type of fileTypes">
+    <tr>
+      <th colspan="3">{{type}} files</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Date</th>
+    </tr>
+      <tr *ngFor = "let info of getFilesByType(type)">
+        <td>{{info.name}}</td>
+        <td>{{info.size}}</td>
+        <td>{{info.date}}</td>
+        <td><button (click)="downloadFile(info.name)">View</button></td>
+      </tr>
+</table>

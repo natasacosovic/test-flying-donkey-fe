@@ -1,0 +1,7 @@
+<h2>Upload file</h2>
+
+<div class="form-group">
+    <p>Supported file types: {{fileTypes}}. <br> Maximum file size = {{fileSize}} bytes.</p>
+    <input type="file" (change)="chooseFile($event)" accept= {{fileTypes}}>
+    <button type="button" (click)="sendFile($event)">Upload file</button>
+</div>
